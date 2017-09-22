@@ -1,0 +1,249 @@
+body{
+	font: 14px normal Verdana, Arial, Helvetica, sans-serif;
+  background-image:url(../images/bg.jpg); 
+  background-position:center;
+  background-attachment:fixed;
+  margin:0;
+}
+
+.main{
+  width:1002px;
+  height:990px;
+  margin-left:210px;
+  margin-right:210px;
+  background:#fff;
+}
+
+.head{
+	background-image:url(../images/title2.png); 
+	width:100%;
+	height:95px;
+}
+
+.head li a{
+	font-size:15px;
+	color:#fff;
+	float:right;
+}
+
+
+.flash{
+	margin:0;
+}
+
+
+.flash img{
+	margin-top:-16px;
+}
+
+.flash object{
+	margin-top:-1px;
+  width:1002px;
+  height:250px;
+}
+
+.intrduce{
+	float:left;
+	margin-top:10px;
+	margin-left:10px;
+	width:650px;
+	height:235px;
+}
+
+img.in_img{
+	float:right; 
+}
+
+.jianjie_top{
+	width:100%;
+	height:30px;
+	background-image:url(../images/menu/top.png); 
+}
+
+.intrduce ul{
+  margin:5px;
+}
+
+
+
+.news{
+	float:right;
+	width:310px;
+	margin:10px;
+	height:235px;
+}
+
+.news li{
+  list-style:none;	
+}
+
+.news_top{
+	width:100%;
+	height:30px;
+	background-image:url(../images/menu/news_top.png); 
+}
+
+.news a{
+  margin:10px;	
+}
+
+
+
+.service{
+	float:left;
+	margin-top:15px;
+	margin-left:10px;
+	margin-right:10px;
+	height:330px;
+	width:650px;
+}
+
+.service img{
+	border:0;
+}
+
+.left_img{
+	margin-top:29px;
+	margin-bottom:29px;
+  float:left;
+  width:50%;
+}
+
+.right_img{
+	margin-top:29px;
+	margin-bottom:29px;
+  float:right;
+  width:50%;
+}
+
+.img_link{
+	width:100%;
+	
+}
+
+.service_top{
+	width:100%;
+	height:30px;
+	margin-bottom:0;
+	background-image:url(../images/menu/service_top.png); 
+}
+
+.service a{
+  margin:10px;	
+}
+
+
+
+.contactus{
+	float:right;
+	margin:10px;
+	height:185px;
+	width:310px;
+}
+
+.contactus img{
+  border:0;	
+}
+
+.contactus_top{
+	width:100%;
+	height:30px;
+	margin-bottom:0;
+	background-image:url(../images/menu/contactus_top.png); 
+}
+
+.contactus a{
+  margin-left:10px;	
+  margin-right:10px;
+}
+
+.auto{
+	float:right;
+  margin-left:10px;	
+  margin-right:10px;	
+}
+
+.auto img{
+	border:0;
+}
+
+.detals{
+	background-image:url(../images/ding.png); 
+	text-align:center;
+  width:1002px;
+  height:60px;
+  margin-top:10px;
+  margin-left:210px;
+  margin-right:210px;
+}
+
+.banquan{
+	width:770px;
+	margin-top:10px;
+}
+
+
+
+.caidan{
+	float:left;
+  width:220px;
+  height:550px;
+  margin:10px;
+}
+
+.caidan	li {
+	float:left;
+	width:220px;
+	margin-top:0;
+	margin-bottom:5px;
+	padding:0;
+	text-align:center;
+}
+
+.caidan	li a {
+	display:block;
+	padding:5px 10px;
+	height:100%;
+	color:#FFF;
+	text-decoration:none;
+	border-right:1px solid #FFF;
+}
+
+.caidan	li a {
+	background:url(../images/bianhuan2.png) repeat 0 0;
+}
+
+.caidan	li a:hover, li a:focus, li a:active {
+	background:url(../images/bianhuan1.png) repeat 0 0;
+}
+
+
+
+.caidan1{
+	margin:0;
+  width:220px;	
+  height:90px;
+  background:	#F0F0F0;
+}
+
+.caidan2{
+	margin:0;
+	width:220px;
+	height:290px;
+	background:	#F0F0F0;
+	margin-top:10px;
+}
+
+.neirong{
+	float:left;
+  margin:10px;
+}
+
+.neirong li{
+	margin:10px;
+	list-style:none;
+}
+
+.en_banquan a{
+  font-size:12;	
+}
