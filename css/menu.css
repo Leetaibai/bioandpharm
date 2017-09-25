@@ -23,6 +23,7 @@
 	color:#fff;
 	font-size:14px;
 	padding: 0;
+    line-height: 20px;
 }
 
 	ul#topnav {
@@ -45,6 +46,7 @@
 	
 	ul#topnav li a {
 		padding: 8px 20px;
+        line-height: 18px;
 		display: block;
 		color: #f0f0f0;
 		text-decoration: none;
