@@ -1,10 +1,10 @@
 .menu{
-		font: 10px normal Verdana, Arial, Helvetica, sans-serif;
-		margin: 0;
-		padding: 0;
-		width:850px; 
-		margin: 0;
-		float:left;
+    font: 10px normal Verdana, Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    width:850px;
+    margin: 0;
+    float:left;
 }
 
 .time{
@@ -16,12 +16,13 @@
 }
 
 .time ul{
-  margin-left:0;
-  margin-top:10px;
-  margin-bottom:9px;
-  text-align:center;
+  	margin-left:0;
+  	margin-top:7px;
+  	margin-bottom:7px;
+  	text-align:center;
 	color:#fff;
 	font-size:14px;
+	padding: 0;
 }
 
 	ul#topnav {
@@ -43,7 +44,7 @@
 	}
 	
 	ul#topnav li a {
-		padding: 10px 20px;
+		padding: 8px 20px;
 		display: block;
 		color: #f0f0f0;
 		text-decoration: none;
@@ -53,7 +54,7 @@
 		float: left;
 		padding: 10px 0;
 		position: absolute;
-		left: 0; top:35px;
+		left: 0; top:34px;
 		display: none;
 		width:1002px;
 		background: #1376c9;

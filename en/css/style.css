@@ -1,17 +1,18 @@
+.clearfix:after {visibility: hidden; display: block; font-size: 0; content: " "; clear: both; height: 0;}
+
 body{
 	font: 14px normal Verdana, Arial, Helvetica, sans-serif;
-  background-image:url(../images/bg.jpg); 
-  background-position:center;
-  background-attachment:fixed;
-  margin:0;
+  	background-image:url(../images/bg.jpg);
+  	background-position:center;
+  	background-attachment:fixed;
+  	margin:0;
 }
 
 .main{
-  width:1002px;
-  height:990px;
-  margin-left:210px;
-  margin-right:210px;
-  background:#fff;
+  	width:1002px;
+  	height:990px;
+	margin: 0 auto;
+  	background:#fff;
 }
 
 .head{
@@ -24,6 +25,7 @@ body{
 	font-size:15px;
 	color:#fff;
 	float:right;
+	padding-right: 10px;
 }
 
 
@@ -33,7 +35,7 @@ body{
 
 
 .flash img{
-	margin-top:-16px;
+	/*margin-top:-16px;*/
 }
 
 .flash object{
@@ -47,16 +49,20 @@ body{
 	margin-top:10px;
 	margin-left:10px;
 	width:650px;
-	height:235px;
+	height:280px;
 }
 
 .intrduce ul{
-	margin:5px;
+	margin: 0;
+	padding-top: 15px;
+	padding-left: 5px;
   font: 12px normal Arial;
 }
 
 img.in_img{
-	float:right; 
+	float:right;
+	padding-top: 15px;
+	padding-left: 5px;
 }
 
 .jianjie_top{
@@ -69,7 +75,7 @@ img.in_img{
 	float:right;
 	width:310px;
 	margin:10px;
-	height:235px;
+	height:270px;
 }
 
 .news li{
@@ -93,7 +99,7 @@ img.in_img{
 	margin-top:15px;
 	margin-left:10px;
 	margin-right:10px;
-	height:330px;
+	/*height:330px;*/
 	width:650px;
 }
 
@@ -136,7 +142,7 @@ img.in_img{
 .contactus{
 	float:right;
 	margin:10px;
-	height:185px;
+	/*height:185px;*/
 	width:310px;
 }
 
@@ -169,18 +175,17 @@ img.in_img{
 }
 
 .detals{
-	background-image:url(../images/ding.png); 
+	background-image:url(../images/ding.png);
 	text-align:center;
-  width:1002px;
-  height:60px;
-  margin-top:10px;
-  margin-left:210px;
-  margin-right:210px;
+	width:1002px;
+	height:60px;
+	margin-top:10px;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 .banquan{
-	width:770px;
-	margin-top:10px;
+	padding-top:10px;
 }
 
 
@@ -237,7 +242,8 @@ img.in_img{
 
 .neirong{
 	float:left;
-  margin:10px;
+    margin:10px;
+    width: 742px;
 }
 
 .neirong li{
