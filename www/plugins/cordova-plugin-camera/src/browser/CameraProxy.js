@@ -100,7 +100,15 @@ function capture(success, errorCallback) {
     };
 
     if (navigator.getUserMedia) {
-        navigator.getUserMedia({video: true, audio: true}, successCallback, errorCallback);
+        //navigator.getUserMedia({video: true, audio: true}, successCallback, errorCallback);
+        navigator.mediaDevices.getUserMedia({video: true, audio: true})
+            .then(function(stream) {
+                successCallback(stream);
+            })
+            .catch(function(err) {
+                /* handle the error */
+                errorCallback(err)
+            });
     } else {
         alert('Browser does not support camera :(');
     }
