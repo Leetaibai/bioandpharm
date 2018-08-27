@@ -5,65 +5,35 @@
     <title>Title</title>
 </head>
 <body>
-hello
+<h1><code>navigator.getUserMedia()</code></h1>
+<video autoplay controls></video>
+<p>
+    <button id="capture">Capture video</button>
+    <button id="stop">Stop</button>
+</p>
 <script>
-    var localMediaStream;
+    window.onload = function() {
+        var video, localMediaStream;
 
-    var video = document.createElement('video');
-    var button = document.createElement('button');
-    var parent = document.createElement('div');
-    parent.style.position = 'relative';
-    parent.style.zIndex = 5555;
-    parent.appendChild(video);
-    parent.appendChild(button);
+        window.URL = window.URL || window.webkitURL;
+        navigator.getUserMedia  = navigator.getUserMedia || navigator.webkitGetUserMedia ||
+            navigator.mozGetUserMedia || navigator.msGetUserMedia;
 
-    video.width = 320;
-    video.height = 240;
-    button.innerHTML = 'Capture!';
+        video = document.querySelector('video');
 
-    button.onclick = function() {
-        // create a canvas and capture a frame from video stream
-        var canvas = document.createElement('canvas');
-        canvas.getContext('2d').drawImage(video, 0, 0, 320, 240);
-
-        // convert image stored in canvas to base64 encoded image
-        var imageData = canvas.toDataURL('img/png');
-        imageData = imageData.replace('data:image/png;base64,', '');
-
-        // stop video stream, remove video and button.
-        // Note that MediaStream.stop() is deprecated as of Chrome 47.
-        if (localMediaStream.stop) {
-            localMediaStream.stop();
-        } else {
-            localMediaStream.getTracks().forEach(function (track) {
-                track.stop();
+        document.querySelector('button#capture').addEventListener('click', function () {
+            navigator.getUserMedia({audio: true, video: true}, function(stream) {
+                localMediaStream = stream;
+                video.src = window.URL.createObjectURL(stream);
+            }, function(e) {
+                console.log(e);
             });
-        }
-        parent.parentNode.removeChild(parent);
+        });
 
-        return success(imageData);
-    };
-
-    navigator.getUserMedia = navigator.getUserMedia ||
-        navigator.webkitGetUserMedia ||
-        navigator.mozGetUserMedia ||
-        navigator.msGetUserMedia;
-
-    var successCallback = function(stream) {
-        localMediaStream = stream;
-        video.src = window.URL.createObjectURL(localMediaStream);
-        video.play();
-
-        document.body.appendChild(parent);
-    };
-    var errorCallback = function(err) {
-
-    }
-
-    if (navigator.getUserMedia) {
-        navigator.getUserMedia({video: true, audio: true}, successCallback, errorCallback);
-    } else {
-        alert('Browser does not support camera :(');
+        document.querySelector('button#stop').addEventListener('click', function(e) {
+            video.pause();
+            localMediaStream.stop();
+        });
     }
 </script>
 </body>
