@@ -99,7 +99,7 @@ function capture(success, errorCallback) {
         document.body.appendChild(parent);
     };
 
-    if (navigator.getUserMedia) {
+    if (navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
         //navigator.getUserMedia({video: true, audio: true}, successCallback, errorCallback);
         navigator.mediaDevices.getUserMedia({video: true, audio: true})
             .then(function(stream) {
@@ -110,7 +110,7 @@ function capture(success, errorCallback) {
                 errorCallback(err)
             });
     } else {
-        alert('Browser does not support camera :(');
+        alert('Browser does not support camera2222 :(');
     }
 }
 
