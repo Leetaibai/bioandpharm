@@ -8,10 +8,10 @@
 hello
 <script>
     var video = document.createElement('video');
-    document.body.appendChild(video);
+
     video.width = 320;
     video.height = 240;
-    
+
     navigator.getUserMedia = navigator.getUserMedia ||
         navigator.webkitGetUserMedia ||
         navigator.mozGetUserMedia ||
@@ -22,7 +22,7 @@ hello
         video.src = window.URL.createObjectURL(localMediaStream);
         video.play();
 
-        document.body.appendChild(parent);
+        document.body.appendChild(video);
     };
     var errorCallback = function() {}
 
