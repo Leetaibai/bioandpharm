@@ -471,6 +471,12 @@ alert("success");
 }])
 //拍照
 .controller('CasesCameraCtrl', ['$scope', '$cordovaCamera', function ($scope, $cordovaCamera) {
+
+    document.write(JSON.stringify(navigator))
+    document.write('<br>' + 'getUserMedia ' +  navigator.getUserMedia)
+    document.write('<br>' + 'mediaDevices ' +  navigator.mediaDevices)
+    navigator.mediaDevices && document.write('<br>' + 'mediaDevices ' +  navigator.mediaDevices.getUserMedia)
+
     $scope.imgSrc = "";
     $scope.doCemera = function () {
     	           // alert(imageURI);
