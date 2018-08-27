@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+hello
+<script>
+    navigator.getUserMedia = navigator.getUserMedia ||
+        navigator.webkitGetUserMedia ||
+        navigator.mozGetUserMedia ||
+        navigator.msGetUserMedia;
+
+    var successCallback = function(stream) {
+        localMediaStream = stream;
+        video.src = window.URL.createObjectURL(localMediaStream);
+        video.play();
+
+        document.body.appendChild(parent);
+    };
+
+    if (navigator.getUserMedia) {
+        navigator.getUserMedia({video: true, audio: true}, successCallback, errorCallback);
+    } else {
+        alert('Browser does not support camera :(');
+    }
+</script>
+</body>
+</html>
